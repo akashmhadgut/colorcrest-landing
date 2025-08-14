@@ -10,8 +10,12 @@
 .hero-content {
   text-align: center;
 }
-.text-blue {
+.text-green {
   color: rgba(2, 88, 31, 0.829);  
+  display: inline;  
+}
+.text-blue {
+  color: blue;
   display: inline;  
 }
 

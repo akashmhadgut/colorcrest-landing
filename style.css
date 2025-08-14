@@ -10,8 +10,33 @@
 .hero-content {
   text-align: center;
 }
-.text-yellow {
-  color: rgba(4, 58, 139, 0.829);  
+.text-blue {
+  color: rgba(2, 88, 31, 0.829);  
   display: inline;  
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+
+.chooseus{
+    background-color: rgba(0, 89, 255, 0.76);
+}

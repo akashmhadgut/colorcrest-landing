@@ -1,17 +1,32 @@
 #hero {
-  height: 100vh;
-  background: url('./backgroundimg.png') no-repeat center center;
+ min-height: 100vh;
+ background: url('./backgroundimg.webp') no-repeat center center;
   background-size: cover;
   display: flex;  
   align-items: center;
   justify-content: center;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 61, 109, 0.301);
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2; 
 }
 
 .hero-content {
   text-align: center;
 }
 .text-green {
-  color: rgba(2, 88, 31, 0.829);  
+  color:rgba(255, 193, 7, 1);  
   display: inline;  
 }
 .text-blue {
@@ -43,4 +58,37 @@
 
 .chooseus{
     background-color: rgba(0, 89, 255, 0.76);
+}
+
+/* Card hover animation */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image overlay effect */
+.card-img-top {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+ 
+button.learnM:hover {
+  background-color: #084298; /* darker blue on hover */
+  color: white;
+  border-color: #084298;
+}
+footer a:hover {
+  color:rgba(255, 193, 7, 1) !important;
 }

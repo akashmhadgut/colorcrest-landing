@@ -1,11 +1,19 @@
+/* ---- Global ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+ /* Hero Section */
 #hero {
- min-height: 100vh;
- background: url('./backgroundimg.webp') no-repeat center center;
+  position: relative;
+  min-height: 100vh;
+  background: url('./backgroundimg.webp') no-repeat center center;
   background-size: cover;
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #hero::before {
   content: "";
   position: absolute;
@@ -19,30 +27,77 @@
 
 #hero .container {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
+/* Optional: Ensures hero content is centered */
 .hero-content {
   text-align: center;
+  padding: 2rem;
 }
+
+/* Enhanced Hero Button */
+.hero-btn {
+  background: linear-gradient(135deg, #036ddf, #00c6ff);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-btn i {
+  font-size: 1.2rem;
+}
+
+.hero-btn:hover {
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.5);
+  background: linear-gradient(135deg, #0056b3, #009fe3);
+  text-decoration: none;
+}
+
+
+/* ---- Text Utilities ---- */
 .text-green {
-  color:rgba(255, 193, 7, 1);  
+  color: rgba(255, 193, 7, 1);  
   display: inline;  
 }
+
 .text-blue {
   color: blue;
   display: inline;  
 }
 
+/* ---- Cards ---- */
 .card {
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+  filter: brightness(0.85);
 }
 
 .card-body {
@@ -55,40 +110,18 @@
   margin-top: auto;
 }
 
-
-.chooseus{
-    background-color: rgba(0, 89, 255, 0.76);
+/* ---- Other Sections ---- */
+.chooseus {
+  background-color: rgba(13, 13, 218, 0.719);
 }
 
-/* Card hover animation */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  border: none;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Image overlay effect */
-.card-img-top {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.card:hover .card-img-top {
-  transform: scale(1.05);
-  filter: brightness(0.85);
-}
- 
-button.learnM:hover {
+/* ---- Links ---- */
+a.learnM:hover {
   background-color: #084298; /* darker blue on hover */
   color: white;
   border-color: #084298;
 }
+
 footer a:hover {
-  color:rgba(255, 193, 7, 1) !important;
+  color: rgba(255, 193, 7, 1) !important;
 }

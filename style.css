@@ -1,0 +1,17 @@
+#hero {
+  height: 100vh;
+  background: url('./backgroundimg.png') no-repeat center center;
+  background-size: cover;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+.text-yellow {
+  color: rgba(4, 58, 139, 0.829);  
+  display: inline;  
+}
+

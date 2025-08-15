@@ -115,7 +115,8 @@ html {
   background-color: rgba(13, 13, 218, 0.719);
 }
 #why-choose-us .card:hover{
-    background-color:  rgba(13, 13, 218, 0.801) !important;
+    background-color:#AFEEEE !important;
+    
 }
 /* ---- Links ---- */
 a.learnM:hover {

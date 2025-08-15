@@ -83,7 +83,7 @@ html {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(14, 49, 247, 0.15);
 }
 
 .card-img-top {
@@ -114,7 +114,9 @@ html {
 .chooseus {
   background-color: rgba(13, 13, 218, 0.719);
 }
-
+#why-choose-us .card:hover{
+    background-color:  rgba(13, 13, 218, 0.801) !important;
+}
 /* ---- Links ---- */
 a.learnM:hover {
   background-color: #084298; /* darker blue on hover */

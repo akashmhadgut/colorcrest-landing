@@ -7,7 +7,7 @@ html {
 #hero {
   position: relative;
   min-height: 100vh;
-  background: url('./backgroundimg.webp') no-repeat center center;
+  background: url('./images/backgroundimg.webp') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
